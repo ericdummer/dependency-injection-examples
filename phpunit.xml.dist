@@ -15,4 +15,18 @@
             <directory suffix=".php">./tests/</directory>
         </testsuite>
     </testsuites>
+  <coverage cacheDirectory="build/cache/unit-tests"
+            includeUncoveredFiles="true"
+            processUncoveredFiles="false"
+            pathCoverage="false"
+            ignoreDeprecatedCodeUnits="true"
+            disableCodeCoverageIgnore="true">
+    <include>
+      <directory suffix=".php">./</directory>
+    </include>
+    <exclude>
+      <directory>./tests</directory>
+      <directory>./vendor</directory>
+    </exclude>
+  </coverage>
 </phpunit>

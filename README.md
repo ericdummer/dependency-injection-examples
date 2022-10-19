@@ -11,9 +11,16 @@ To connect to the container (using bash)
 
 ```docker exec -it dependency-injection-examples-core-1 /bin/bash```
 
-## tests
+## Tests
 To run tests (when connected to the container)
 
 ```composer install``` (first time only)
 
 ```composer test```
+
+### Code Coverage
+
+```composer test -- --coverage-html coverage```
+
+To view, open  `<app-folder>/coverage/index.html` in a browser.
+
