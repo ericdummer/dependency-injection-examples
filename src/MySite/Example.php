@@ -16,8 +16,7 @@ class Example
     $this->wordProcessor = $wordProcessor;
   }
 
-
-  /*
+/*
   public function setDictionary(Dictionary $dictionary): Example
   {
     $this->dictionary = $dictionary ;
@@ -29,7 +28,7 @@ class Example
     $this->wordProcessor = $wordProcessor;
     return $this;
   }
-  */
+*/
 
   /**
    * Get a number of random words to make a nonsensical sentence

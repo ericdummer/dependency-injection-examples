@@ -57,7 +57,6 @@ class Dictionary {
    */
   public function getRandomWord(int $frequencyThreshold = 1000) {
     $dictionaryData = $this->getDictionary();
-    var_dump(array_slice($dictionaryData, 0, 5));
     array_multisort (array_column($dictionaryData, 'frequency'), SORT_DESC, $dictionaryData);
     $filtered = array_slice($dictionaryData, 0, $frequencyThreshold);
     $rand = mt_rand(0,count($filtered) - 1);
