@@ -6,6 +6,9 @@
 .project
 .settings
 
+#coverage
+/coverage/
+
 #Intlelij or PHPStorm
 .idea/*
 /vendor/
